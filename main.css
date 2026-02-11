@@ -47,7 +47,7 @@ hr{
 
 body{
     background-image: url(med1.png);
-    
+    animation : bg-move 50s linear infinite ;
     /* background: linear-gradient(to right, #8ac7f6,var(--accent-color)); */
     background-size: 500px;
     
@@ -78,7 +78,10 @@ body{
     80% {color:rgb(0, 119, 255);}
     100% {color:red;}
 }
- 
+ @keyframes bg-move{
+     from {background-position : 0 0 ;}
+to {background-position : -1000px 0 ;} 
+ }
 @keyframes bg{
     from{
         background: linear-gradient(to right, #8ac7f680,rgba(37, 100, 235, 0.9));
@@ -460,5 +463,6 @@ footer{
     gap: 0.5rem;
     text-align: start;
 }
+
 
 }   
